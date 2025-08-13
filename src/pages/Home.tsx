@@ -1,4 +1,7 @@
+import { Link } from "react-router-dom";
 import Layout from "../components/Layout";
+import { projects } from "../util/projects";
+import type { Project } from "../interface/interfaces";
 
 function Home() {
     return (
@@ -18,23 +21,25 @@ function Home() {
             </section>
             <section className="w-full h-auto relative">
                 <div className="grid grid-cols-2">
-                    {[...Array(8)].map((_i: any, k: number) => {
+                    {projects.map((item: Project) => {
                         return (
-                            <div className="relative group" key={k}>
-                                <picture>
-                                    <img
-                                        src={"https://placehold.co/953x714"}
-                                        alt=""
-                                        className="max-w-full object-cover"
-                                    />
-                                </picture>
-                                <div className="absolute inset-0 w-full h-full flex items-center justify-center bg-stone-100/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                                    <div className="flex flex-col items-center justify-center cursor-pointer w-full h-full">
-                                        <h2 className="text-6xl">
-                                            Project {k + 1}
-                                        </h2>
+                            <div className="relative group" key={item.id}>
+                                <Link to={`/project/${item.slug}`}>
+                                    <picture>
+                                        <img
+                                            src={item.thumbnail}
+                                            alt={item.name}
+                                            className="max-w-full object-cover"
+                                        />
+                                    </picture>
+                                    <div className="absolute inset-0 w-full h-full flex items-center justify-center bg-stone-100/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                        <div className="flex flex-col items-center justify-center cursor-pointer w-full h-full">
+                                            <h2 className="text-6xl">
+                                                {item.name}
+                                            </h2>
+                                        </div>
                                     </div>
-                                </div>
+                                </Link>
                             </div>
                         );
                     })}

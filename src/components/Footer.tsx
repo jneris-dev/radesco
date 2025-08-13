@@ -1,7 +1,7 @@
 function Footer() {
     return (
         <footer className="w-full h-auto py-12 relative">
-            <div className="container flex gap-10 mx-auto">
+            <div className="container flex gap-10 mx-auto px-12">
                 <div className="flex flex-col gap-2">
                     <p className="text-lg">- Follow me</p>
                     <ul className="flex gap-3 text-stone-400 ps-2.5">
