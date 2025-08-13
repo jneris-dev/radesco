@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 function Header() {
     return (
-        <header className="w-full h-auto py-4 sticky inset-0 z-10">
-            <nav className="container w-full flex justify-between mx-auto items-center px-12">
+        <header className="w-full h-auto py-4">
+            <nav className="container w-full flex justify-between mx-auto items-center sm:px-12 px-6">
                 <div className="flex flex-col">
                     <Link to="/">
                         <h1 className="text-2xl font-semibold">Rafael Radesco</h1>

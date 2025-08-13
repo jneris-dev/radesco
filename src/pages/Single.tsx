@@ -28,10 +28,10 @@ function Single() {
     return (
         <Layout>
             <section className="w-full h-auto relative">
-                <div className="container mx-auto min-h-[300px] flex justify-center items-center">
-                    <div className="w-full flex justify-between items-center py-12">
+                <div className="container mx-auto md:min-h-[300px] flex justify-center items-center sm:px-12 px-6">
+                    <div className="w-full flex md:flex-row flex-col md:justify-between md:items-center gap-5 py-12">
                         <h1 className="text-4xl">{project.name}</h1>
-                        <div className="w-1/3">
+                        <div className="lg:w-1/3 md:w-1/2 w-full">
                             <p>{project.description}</p>
                         </div>
                     </div>
@@ -39,13 +39,13 @@ function Single() {
             </section>
 
             <section className="w-full h-auto relative pb-8">
-                <div className="container mx-auto">
-                    <div className="grid grid-cols-2 gap-14">
+                <div className="container mx-auto sm:px-12 px-6">
+                    <div className="grid md:grid-cols-2 grid-cols-1 lg:gap-14 md:gap-8 gap-4">
                         {project.arts.map((art: Art) => {
                             return (
                                 <div
                                     className={
-                                        art.id < 1 ? "col-span-2" : "col-span-1"
+                                        art.id < 1 ? "md:col-span-2" : "col-span-1"
                                     }
                                     key={art.id}
                                 >
@@ -64,7 +64,7 @@ function Single() {
             </section>
 
             <section className="w-full h-auto relative">
-                <div className="container mx-auto py-12">
+                <div className="container mx-auto py-12 sm:px-12 px-6">
                     <Navigation data={projects} current={project.id} />
                 </div>
             </section>

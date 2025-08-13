@@ -7,20 +7,20 @@ function Home() {
     return (
         <Layout>
             <section className="w-full h-auto relative">
-                <div className="container w-full mx-auto min-h-[588px] flex items-center justify-center py-12">
+                <div className="container w-full mx-auto md:min-h-[588px] flex items-center justify-center py-12 sm:px-12 px-6">
                     <div className="max-w-[920px] flex flex-col gap-10">
-                        <p className="text-5xl font-medium">
+                        <p className="md:text-5xl sm:text-3xl text-2xl font-medium">
                             Lorem ipsum dolor, sit amet consectetur adipisicing
                             elit. Corrupti quis temporibus aliquid inventore
                             praesentium ducimus veniam reprehenderit ad pariatur
                             ipsam
                         </p>
-                        <p className="text-2xl">Scroll down to see my work!</p>
+                        <p className="sm:text-2xl text-lg">Scroll down to see my work!</p>
                     </div>
                 </div>
             </section>
             <section className="w-full h-auto relative">
-                <div className="grid grid-cols-2">
+                <div className="grid md:grid-cols-2 grid-cols-1">
                     {projects.map((item: Project) => {
                         return (
                             <div className="relative group" key={item.id}>

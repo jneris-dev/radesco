@@ -1,7 +1,7 @@
 function Footer() {
     return (
         <footer className="w-full h-auto py-12 relative">
-            <div className="container flex gap-10 mx-auto px-12">
+            <div className="md:container flex gap-10 mx-auto sm:px-12 px-6 flex-wrap lg:justify-start md:justify-center">
                 <div className="flex flex-col gap-2">
                     <p className="text-lg">- Follow me</p>
                     <ul className="flex gap-3 text-stone-400 ps-2.5">
@@ -31,7 +31,7 @@ function Footer() {
                         contato@radesco.com.br
                     </a>
                 </div>
-                <div className="ms-auto self-end">
+                <div className="ms-auto self-end lg:w-auto w-full lg:text-end text-center">
                     <p className="text-sm">
                         ©2025 Radesco. All rights reserved. Create by{" "}
                         <a
