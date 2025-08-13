@@ -8,7 +8,7 @@ type LayoutProps = {
 
 function Layout({ children }: LayoutProps) {
     return (
-        <main className="relative">
+        <main className="relative flex flex-col min-h-[100dvh]">
             <Header />
             {children}
             <Footer />

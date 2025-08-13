@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Header() {
     return (
@@ -6,28 +6,40 @@ function Header() {
             <nav className="container w-full flex justify-between mx-auto items-center sm:px-12 px-6">
                 <div className="flex flex-col">
                     <Link to="/">
-                        <h1 className="text-2xl font-semibold">Rafael Radesco</h1>
+                        <h1 className="text-2xl font-semibold">
+                            Rafael Radesco
+                        </h1>
                         <p className="uppercase tracking-widest text-sm">
                             Creative Director
                         </p>
                     </Link>
                 </div>
                 <div className="flex gap-4 text-xl">
-                    <li className="list-none group active">
-                        <Link
+                    <li className="list-none">
+                        <NavLink
                             to="/"
-                            className="border-b-2 border-transparent group-[.active]:border-stone-700 group-hover:border-stone-700"
+                            className={({ isActive }) =>
+                                (isActive
+                                    ? "border-stone-700"
+                                    : "border-transparent") +
+                                " border-b-2 hover:border-stone-700"
+                            }
                         >
                             Work
-                        </Link>
+                        </NavLink>
                     </li>
-                    <li className="list-none group">
-                        <Link
+                    <li className="list-none">
+                        <NavLink
                             to="/about"
-                            className="border-b-2 border-transparent group-[.active]:border-stone-700 group-hover:border-stone-700"
+                            className={({ isActive }) =>
+                                (isActive
+                                    ? "border-stone-700"
+                                    : "border-transparent") +
+                                " border-b-2 hover:border-stone-700"
+                            }
                         >
                             About
-                        </Link>
+                        </NavLink>
                     </li>
                 </div>
             </nav>

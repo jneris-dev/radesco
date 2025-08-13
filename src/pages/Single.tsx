@@ -18,9 +18,9 @@ function Single() {
     if (!project)
         return (
             <Layout>
-                <div className="w-full h-dvh flex items-center justify-center gap-3">
-                    <h1>Projeto não encontrado</h1>
-                    <Link to="/">Retornar ao início</Link>
+                <div className="w-full flex-auto flex flex-col items-center justify-center gap-6 sm:px-12 px-6">
+                    <h1 className="md:text-5xl text-3xl">Projeto não encontrado</h1>
+                    <Link to="/" className="border-b-2 border-transparent hover:border-stone-700">Retornar ao início</Link>
                 </div>
             </Layout>
         );
