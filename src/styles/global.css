@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Oswald", sans-serif; 
+}
+
+body {
+    @apply font-display w-full h-auto relative overflow-x-hidden bg-stone-50 text-stone-900;
+}
