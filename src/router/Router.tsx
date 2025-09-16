@@ -1,24 +1,25 @@
 import { useEffect } from "react";
-import { Navigate, Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 
 import Home from "../pages/Home";
 import Single from "../pages/Single";
 import About from "../pages/About";
+import NotFound from "../pages/NotFound";
 
 export function Router() {
-    const { pathname } = useLocation();
+  const { pathname } = useLocation();
 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, [pathname]);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
-    return (
-        <Routes>
-            <Route path="*" element={<Navigate replace to="/" />} />
+  return (
+    <Routes>
+      <Route path="*" element={<NotFound />} />
 
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/project/:slug" element={<Single />} />
-        </Routes>
-    );
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/project/:slug" element={<Single />} />
+    </Routes>
+  );
 }
