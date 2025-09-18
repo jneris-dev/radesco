@@ -1,10 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
-  --font-display: "Oswald", sans-serif; 
+  --font-display: "Oswald", sans-serif;
+
+  --color-blue-magenta-50: #e5e4ee;
+  --color-blue-magenta-100: #cac7db;
+  --color-blue-magenta-200: #9791b8;
+  --color-blue-magenta-300: #685f93;
+  --color-blue-magenta-400: #3b3459;
+  --color-blue-magenta-500: #131021;
+  --color-blue-magenta-600: #0f0c1b;
+  --color-blue-magenta-700: #0b0916;
+  --color-blue-magenta-800: #080611;
+  --color-blue-magenta-900: #040309;
+  --color-blue-magenta-950: #040309;
 }
 
 body {
-    @apply font-display w-full h-auto relative overflow-x-hidden bg-stone-50 text-stone-900;
+    @apply font-display w-full h-auto relative overflow-x-hidden bg-stone-50 text-stone-900 dark:bg-blue-magenta-500 dark:text-stone-100;
 }

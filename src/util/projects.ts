@@ -10,197 +10,49 @@ export const projects = [
       {
         id: 0,
         title: "Outdoor Campo",
-        art: "/outdoor-campo.jpg",
+        thumb: "/outdoor-campo.jpg",
       },
       {
         id: 1,
         title: "Banner bois",
-        art: "/banner-bois.jpg",
+        thumb: "/banner-bois.jpg",
       },
       {
         id: 2,
         title: "Drone",
-        art: "/drone.jpg",
+        thumb: "/drone.jpg",
       },
       {
         id: 3,
+        title: "PMA 7ª Edição - Prêmio Mulheres do Agro",
+        thumb: "",
+        url: "https://www.youtube-nocookie.com/embed/4mzzVuUynoU?si=xP_bByPEJVF1yGwc?modestbranding=1&showinfo=0",
+      },
+      {
+        id: 4,
         title: "Telão",
-        art: "/telao.jpg",
+        thumb: "/telao.jpg",
       },
       {
-        id: 4,
+        id: 5,
         title: "Ganhadoras do premio",
-        art: "/ganhadoras-do-premio.jpg",
+        thumb: "/ganhadoras-do-premio.jpg",
       },
       {
-        id: 5,
+        id: 6,
         title: "Celular",
-        art: "/celular-mulheres-agro.gif",
+        thumb: "/celular-mulheres-agro.gif",
       },
       {
-        id: 5,
-        title: "Boné",
-        art: "/bone-mulheres-do-agro.jpg",
-      },
-    ],
-  },
-  {
-    id: 1,
-    name: "Projeto 2",
-    slug: "projeto-2",
-    thumbnail: "https://placehold.co/953x714",
-    description:
-      "This is where the project description goes. Give an overview or go in depth - what it's all about, what inspired you, how you created it, or anything else you'd like visitors to know. To add Project descriptions, go to Manage Projects.",
-    arts: [
-      {
-        id: 0,
-        title: "Art 1",
-        art: "https://placehold.co/1345x919",
+        id: 7,
+        title: "Adesivo trator",
+        thumb: "/adesivo-trator.jpg",
       },
       {
-        id: 1,
-        title: "Art 2",
-        art: "https://placehold.co/653x367",
-      },
-      {
-        id: 2,
-        title: "Art 3",
-        art: "https://placehold.co/653x367",
-      },
-      {
-        id: 3,
-        title: "Art 4",
-        art: "https://placehold.co/653x367",
-      },
-      {
-        id: 4,
-        title: "Art 5",
-        art: "https://placehold.co/653x367",
-      },
-      {
-        id: 5,
-        title: "Art 6",
-        art: "https://placehold.co/653x367",
-      },
-    ],
-  },
-  {
-    id: 2,
-    name: "Projeto 3",
-    slug: "projeto-3",
-    thumbnail: "https://placehold.co/953x714",
-    description:
-      "This is where the project description goes. Give an overview or go in depth - what it's all about, what inspired you, how you created it, or anything else you'd like visitors to know. To add Project descriptions, go to Manage Projects.",
-    arts: [
-      {
-        id: 0,
-        title: "Art 1",
-        art: "https://placehold.co/1345x919",
-      },
-      {
-        id: 1,
-        title: "Art 2",
-        art: "https://placehold.co/653x367",
-      },
-      {
-        id: 2,
-        title: "Art 3",
-        art: "https://placehold.co/653x367",
-      },
-      {
-        id: 3,
-        title: "Art 4",
-        art: "https://placehold.co/653x367",
-      },
-      {
-        id: 4,
-        title: "Art 5",
-        art: "https://placehold.co/653x367",
-      },
-      {
-        id: 5,
-        title: "Art 6",
-        art: "https://placehold.co/653x367",
-      },
-    ],
-  },
-  {
-    id: 3,
-    name: "Projeto 4",
-    slug: "projeto-4",
-    thumbnail: "https://placehold.co/953x714",
-    description:
-      "This is where the project description goes. Give an overview or go in depth - what it's all about, what inspired you, how you created it, or anything else you'd like visitors to know. To add Project descriptions, go to Manage Projects.",
-    arts: [
-      {
-        id: 0,
-        title: "Art 1",
-        art: "https://placehold.co/1345x919",
-      },
-      {
-        id: 1,
-        title: "Art 2",
-        art: "https://placehold.co/653x367",
-      },
-      {
-        id: 2,
-        title: "Art 3",
-        art: "https://placehold.co/653x367",
-      },
-      {
-        id: 3,
-        title: "Art 4",
-        art: "https://placehold.co/653x367",
-      },
-      {
-        id: 4,
-        title: "Art 5",
-        art: "https://placehold.co/653x367",
-      },
-      {
-        id: 5,
-        title: "Art 6",
-        art: "https://placehold.co/653x367",
-      },
-    ],
-  },
-  {
-    id: 4,
-    name: "Projeto 5",
-    slug: "projeto-5",
-    thumbnail: "https://placehold.co/953x714",
-    description:
-      "This is where the project description goes. Give an overview or go in depth - what it's all about, what inspired you, how you created it, or anything else you'd like visitors to know. To add Project descriptions, go to Manage Projects.",
-    arts: [
-      {
-        id: 0,
-        title: "Art 1",
-        art: "https://placehold.co/1345x919",
-      },
-      {
-        id: 1,
-        title: "Art 2",
-        art: "https://placehold.co/653x367",
-      },
-      {
-        id: 2,
-        title: "Art 3",
-        art: "https://placehold.co/653x367",
-      },
-      {
-        id: 3,
-        title: "Art 4",
-        art: "https://placehold.co/653x367",
-      },
-      {
-        id: 4,
-        title: "Art 5",
-        art: "https://placehold.co/653x367",
-      },
-      {
-        id: 5,
-        title: "Art 6",
-        art: "https://placehold.co/653x367",
+        id: 8,
+        title: "PMA 7ª Edição - Prêmio Mulheres do Agro - Manifesto",
+        thumb: "",
+        url: "https://www.youtube-nocookie.com/embed/OwauKZ3bN4E?modestbranding=1&showinfo=0",
       },
     ],
   },

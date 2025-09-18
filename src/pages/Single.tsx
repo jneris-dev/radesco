@@ -49,20 +49,36 @@ function Single() {
             {project.arts.map((art: Art, index: Key) => {
               return (
                 <div
-                  className={art.id < 1 ? "md:col-span-2" : "col-span-1"}
+                  className={
+                    art.id === 0 ||
+                    (art.id === 3 && art.url) ||
+                    (art.id === 8 && art.url)
+                      ? "md:col-span-2"
+                      : "col-span-1"
+                  }
                   key={index}
                 >
-                  <picture>
-                    <img
-                      src={
-                        art.art.includes("https")
-                          ? art.art
-                          : "/assets/projects/" + slug + art.art
-                      }
-                      alt={art.title}
-                      className="max-w-full object-cover w-full h-full"
-                    />
-                  </picture>
+                  {art.url ? (
+                    <iframe
+                      className="w-full max-h-[960px] aspect-video"
+                      src={art.url}
+                      title={art.title}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                    ></iframe>
+                  ) : (
+                    <picture>
+                      <img
+                        src={
+                          art.thumb.includes("https")
+                            ? art.thumb
+                            : "/assets/projects/" + slug + art.thumb
+                        }
+                        alt={art.title}
+                        className="max-w-full object-cover w-full h-full"
+                      />
+                    </picture>
+                  )}
                 </div>
               );
             })}
