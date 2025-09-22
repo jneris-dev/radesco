@@ -20,5 +20,9 @@
 }
 
 body {
-    @apply font-display w-full h-auto relative overflow-x-hidden bg-stone-50 text-stone-900 dark:bg-blue-magenta-500 dark:text-stone-100;
+  @apply font-display w-full h-auto relative overflow-x-hidden bg-stone-50 text-stone-900 dark:bg-[#00010f] dark:text-stone-100;
+}
+
+.about br {
+  @apply hidden sm:block
 }
